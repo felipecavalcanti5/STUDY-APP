@@ -1,7 +1,7 @@
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native'
 import React, { useContext, useEffect, useState } from 'react'
 import CartoesEstudoContext from '../contexts/CartoesEstudoContext'
-import { Picker } from '@react-native-async-storage/async-storage'
+import { Picker } from '@react-native-picker/picker'
 import DateTimePickerModal from 'react-native-modal-datetime-picker'
 
 const EdicaoCartaoScreen = ({route, navigation }) => {
