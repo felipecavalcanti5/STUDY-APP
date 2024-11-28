@@ -26,7 +26,8 @@ App.js: componente pai do projeto
 babel.config.js
 	
 No Context: Será realizado o **CRUD** de cartões: carregar cartões, adicionar cartão, atualizar cartão e excluir cartão
-por que eu armazeno as imagens na pasta **assets**?
+
+Por que eu armazeno as imagens na pasta **assets**?
 R: é onde você armazena **recursos estáticos** que serão utilizados na aplicação, como imagens, fontes, ícones, sons e vídeos. Esses recursos são geralmente arquivos que são necessários para a interface do usuário ou para o funcionamento da aplicação, mas que não são dinamicamente gerados ou alterados pela aplicação.
 [ falar da relevância do ID para editar ou criar um cartão]
 lixeirinha e lápis são imagens? R: não, fazem parte de uma biblioteca importada para o projeto
