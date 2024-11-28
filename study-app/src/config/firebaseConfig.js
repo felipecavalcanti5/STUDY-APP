@@ -3,15 +3,22 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import {
+    FIREBASE_API_KEY,
+    FIREBASE_AUTH_DOMAIN,
+    FIREBASE_PROJECT_ID,
+    FIREBASE_STORAGE_BUCKET,
+    FIREBASE_MESSAGING_SENDER_ID,
+    FIREBASE_APP_ID,
+} from '@env'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDw5ukzpdQZdCtPu5g48oY1ft_2Xtg6T6M",
-  authDomain: "study-app-2024-2-felipec.firebaseapp.com",
-  projectId: "study-app-2024-2-felipec",
-  storageBucket: "study-app-2024-2-felipec.firebasestorage.app",
-  messagingSenderId: "447170610230",
-  appId: "1:447170610230:web:6e2d601c6890dbfdd10497",
-  measurementId: "G-RP6YW0K6LT"
+    apiKey: FIREBASE_API_KEY,
+    authDomain: FIREBASE_AUTH_DOMAIN,
+    projectId: FIREBASE_PROJECT_ID,
+    storageBucket: FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+    appId: FIREBASE_APP_ID
 };
 
 const app = !getApps.length ? initializeApp(firebaseConfig) : getApp();
